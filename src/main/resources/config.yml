@@ -1,0 +1,360 @@
+#######################
+# Venom Configuration #
+#######################
+
+# Violations Placeholders:
+# %player%
+# %uuid%
+# %check%
+# %type%
+# %dev%
+# %vl%
+# %maxvl%
+# %ping%
+# %tps%
+
+violations:
+# VISIBILITY TYPES:
+ # 1. ADMIN - Only operators will see alerts
+ # 2. SELF - Only flagged player will see his own alert
+ # 3. ADMIN-SELF - Alerts will send to operators and flagged players
+
+  visibility: 'ADMIN'
+  alert-format: '&8[&4&lVenom&8] &c%player% &7failed &c%check% (%type%) &7x%vl% &c%dev%'
+  alert-cooldown: 0
+  minimum-vl-to-alert: 2
+  clear-violations-delay: 2
+
+# Punish Placeholders:
+  # %player%
+  # %check%
+  # %type%
+
+  punish-command: 'kick %player% &4&lVenom AntiCheat &8» &7Unfair Advantage'
+
+checks:
+  combat:
+    aimassist:
+      a:
+        enabled: true
+        max-violations: 20
+      b:
+        enabled: true
+        max-violations: 16
+      c:
+        enabled: true
+        max-violations: 16
+      d:
+        enabled: true
+        max-violations: 14
+      e:
+        enabled: true
+        max-violations: 22
+      f:
+        enabled: true
+        max-violations: 12
+      g:
+        enabled: true
+        max-violations: 22
+      h:
+        enabled: true
+        max-violations: 14
+      i:
+        enabled: true
+        max-violations: 14
+
+    autoclicker:
+      a:
+        enabled: true
+        max-violations: 4
+        max-cps: 24
+      b:
+        enabled: true
+        max-violations: 15
+      c:
+        enabled: true
+        max-violations: 15
+      d:
+        enabled: true
+        max-violations: 15
+      e:
+        enabled: true
+        max-violations: 15
+      f:
+        enabled: true
+        max-violations: 15
+
+    hitbox:
+      a:
+        enabled: true
+        max-violations: 12
+      b:
+        enabled: true
+        max-violations: 3
+
+    killaura:
+      a:
+        enabled: true
+        max-violations: 4
+      b:
+        enabled: true
+        max-violations: 4
+      c:
+        enabled: true
+        max-violations: 5
+      d:
+        enabled: true
+        max-violations: 5
+      e:
+        enabled: true
+        max-violations: 12
+      f:
+        enabled: true
+        max-violations: 12
+
+    reach:
+      a:
+        enabled: true
+        max-violations: 14
+        max-reach: 3.02
+
+    velocity:
+      a:
+        enabled: true
+        max-violations: 14
+      b:
+        enabled: true
+        max-violations: 14
+
+  movement:
+    fastclimb:
+      a:
+        enabled: true
+        max-violations: 8
+
+    fly:
+      a:
+        enabled: true
+        max-violations: 15
+      b:
+        enabled: true
+        max-violations: 15
+      c:
+        enabled: true
+        max-violations: 15
+      d:
+        enabled: true
+        max-violations: 15
+      e:
+        enabled: true
+        max-violations: 15
+      f:
+        enabled: true
+        max-violations: 15
+      g:
+        enabled: true
+        max-violations: 15
+      h:
+        enabled: true
+        max-violations: 15
+
+    largemove:
+      a:
+        enabled: true
+        max-violations: 3
+      b:
+        enabled: true
+        max-violations: 3
+
+    phase:
+      a:
+        enabled: true
+        max-violations: 8
+
+    jesus:
+      a:
+        enabled: true
+        max-violations: 15
+      b:
+        enabled: true
+        max-violations: 15
+      c:
+        enabled: true
+        max-violations: 15
+      d:
+        enabled: true
+        max-violations: 15
+
+    move:
+      a:
+        enabled: true
+        max-violations: 15
+      b:
+        enabled: true
+        max-violations: 15
+      c:
+        enabled: true
+        max-violations: 15
+      d:
+        enabled: true
+        max-violations: 15
+      e:
+        enabled: true
+        max-violations: 15
+
+    sprint:
+      a:
+        enabled: true
+        max-violations: 15
+
+    jump:
+      a:
+        enabled: true
+        max-violations: 12
+      b:
+        enabled: true
+        max-violations: 20
+
+    step:
+      a:
+        enabled: true
+        max-violations: 6
+
+    strafe:
+      a:
+        enabled: true
+        max-violations: 14
+      b:
+        enabled: true
+        max-violations: 8
+
+    speed:
+      a:
+        enabled: true
+        max-violations: 15
+      b:
+        enabled: true
+        max-violations: 15
+      c:
+        enabled: true
+        max-violations: 15
+      d:
+        enabled: true
+        max-violations: 15
+      e:
+        enabled: true
+        max-violations: 15
+      f:
+        enabled: true
+        max-violations: 15
+
+  player:
+    inventory:
+      a:
+        enabled: true
+        max-violations: 14
+      b:
+        enabled: true
+        max-violations: 14
+
+    scaffold:
+      a:
+        enabled: true
+        max-violations: 8
+      b:
+        enabled: true
+        max-violations: 8
+      c:
+        enabled: true
+        max-violations: 8
+      d:
+        enabled: true
+        max-violations: 8
+      e:
+        enabled: true
+        max-violations: 8
+      f:
+        enabled: true
+        max-violations: 8
+      g:
+        enabled: true
+        max-violations: 8
+      h:
+        enabled: true
+        max-violations: 8
+
+  packet:
+    timer:
+      a:
+        enabled: true
+        max-violations: 25
+      b:
+        enabled: true
+        max-violations: 25
+      c:
+        enabled: true
+        max-violations: 25
+      d:
+        enabled: true
+        max-violations: 25
+
+    post:
+      a:
+        enabled: true
+        max-violations: 5
+      b:
+        enabled: true
+        max-violations: 5
+      c:
+        enabled: true
+        max-violations: 5
+      d:
+        enabled: true
+        max-violations: 5
+      e:
+        enabled: true
+        max-violations: 5
+      f:
+        enabled: true
+        max-violations: 5
+      g:
+        enabled: true
+        max-violations: 5
+
+    badpackets:
+      a:
+        enabled: true
+        max-violations: 2
+      b:
+        enabled: true
+        max-violations: 6
+      c:
+        enabled: true
+        max-violations: 8
+      d:
+        enabled: true
+        max-violations: 8
+      e:
+        enabled: true
+        max-violations: 8
+      f:
+        enabled: true
+        max-violations: 8
+      g:
+        enabled: true
+        max-violations: 6
+      h:
+        enabled: true
+        max-violations: 8
+      i:
+        enabled: true
+        max-violations: 6
+      j:
+        enabled: true
+        max-violations: 4
+      k:
+        enabled: true
+        max-violations: 2
+      l:
+        enabled: true
+        max-violations: 20

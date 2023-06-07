@@ -1,0 +1,11 @@
+name: Venom
+version: 1.11
+main: dev.venom.VenomPlugin
+author: Trajkot
+description: Powerful anti-cheat solution
+
+commands:
+  venom:
+    description: Commands for Venom Anti-Cheat.
+    usage: /venom
+    permission: venom.cmd
