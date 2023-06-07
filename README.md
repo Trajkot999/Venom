@@ -3,8 +3,8 @@ Powerful anti-cheat solution plugin
 Supports 1.7/1.8 primarily, 1.9-1.19.4 support is very experimental and will be fully implemented soon.
 
 # Venom Dependencies:
-Venom don't need any other plugins to work!
-You just simply drag n drop it into your plugins folder and thats it!
+Venom doesn't need any other plugins to work!
+You just simply drag n drop it into your plugins folder and that's it!
 
 # Venom Credits:
 - Islandscout code under the GNU license.
